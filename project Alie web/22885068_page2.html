@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5505 Aglie web</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./22885068.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./22885068.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">CITS5505 Aglie Web Development</h1>
+      </div>
+    </div>
+<!-- Navigate Bar -->
+      <div class="container-fluid colorset" id='myNavBar'>
+        <ul class="nav nav-tabs ">
+            <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">History&Evolution</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./22885068_page1.html">Browser</a>
+                  <a class="dropdown-item" href="./22885068_page1.html">HTML</a>
+                  <a class="dropdown-item" href="./22885068_page1.html">CSS</a>
+                  <a class="dropdown-item" href="./22885068_page1.html">JS</a>
+                </div>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Usage of HTML,CSS and JS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./22885068_page3.html">Author</a>
+          </li>
+        </ul>
+      </div>
+      <br>
+     
+    <!--Examples of HTML, CSS & JS  -->
+      <div class="container" id='down'>
+        <h2>Examples of Using HTML, CSS, JS</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-4"><img onclick="html()" src="img_html.jpg" class="rounded size" alt="html" ></div>
+            <div class="col-sm-4"><img onclick="css()" src="img_css.jpg" class="rounded size" alt="css" ></div>
+            <div class="col-sm-4">
+                <div class='row' >
+                    <h1 style="font-weight:900;">&nbsp;&nbsp;JavaScript</h1>
+                </div>
+                <div class='row'>
+                    <div class="col-sm-3"><img onclick="js()" src="img_js.png" class="rounded size" alt="js" ></div>
+                </div>
+            </div>   
+        </div>
+        <br>
+    </div>
+<!-- Examples of HTML -->
+    <div class="container disappear" id='html'  >
+        <h3 >HTML Examples</h3>
+                    <p>The elements in html is represented by <>tags. Usually, the contents of webpage are writing between the start tag and the end tag.  The css attributes can be added inside tags to provide additional information about the element.
+                        <br/> The normal used tag names are shown below.
+                    </p>
+            <table class='table table-striped table-hover'>
+                <tr>
+                  <th>HTML Blocks</th>
+                  <th>Tag name</th>
+                  <th>Code</th>
+                  <th>Descript</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/whatis/whatis_html.asp">Heading</a></td>
+                  <td><code> &lth1&gt to &lth6&gt</code></td>
+                  <td><code>&lth3&gt</code> This is h3 <code>&lt/h3&gt</code></td>
+                  <td>This tag define the heading levels from h1 to h6 with the most important to less important</td>
+                    <td><h3>This is h3</h3></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.w3schools.com/whatis/whatis_html.asp">Paragraph</a></td>
+                  <td><code>&ltp&gt</code></td>
+                  <td><code>&ltp&gt</code>This is a paragraph.<code>&lt/p&gt</code></td>
+                  <td>This tag define the content of paragraphy. The css attributes can be added inside <code>&ltp&gt</code> tag to change paragraphy style </td>
+                  <td><p>this is a paragraphy</p></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/whatis/whatis_html.asp">Links</a></td>
+                    <td><code>&lta&gt</code></td>
+                    <td><code>&lta href</code>="https://www.w3schools.com"<code>></code>This is a link <code>&lt/a&gt</code></td>
+                    <td><code>&lta&gt</code>define a hyperlink. The link's destination is specified in the href attribute</td>
+                    <td>click "link" before  </td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/whatis/whatis_html.asp">Buttons</a></td>
+                    <td><code>&ltbutton&gt</code></td>
+                    <td><code>&ltbutton&gt</code> Click me <code>&lt/button&gt</code></td>
+                    <td><code>&ltButton&gt</code>usually used with <code>&lta&gt</code>together to connect a link </td>
+                    <td><button><a href="https://www.w3schools.com">click me</a></button></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/whatis/whatis_html.asp">Images</a></td>
+                    <td><code>&ltimg&gt</code></td>
+                    <td><code>&ltimg&gt</code> <code>src</code>="img_w3schools.jpg" <code>alt</code>="W3Schools" <code>style</code>="width:120px;height:150px" <code>&lt/img&gt</code></td>
+                    <td><code>&ltimg&gt</code> used to link an image. The source file destination is specified by (src), alternative text (alt), </td>
+                    <td><img src="cat.jpeg" width="200px"</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/whatis/whatis_html.asp">Lists</a></td>
+                    <td><code>&ltul&gt</code>; <code>&ltol&gt</code>; <code>&ltli&gt</code></td>
+                    <td><code>&ltul&gt</code>
+                        <code>&ltli&gt</code>Coffee<code>&lt/li&gt</code>
+                        <code>&ltli&gt</code>Tea<code>&lt/li&gt</code>
+                        <code>&lt/ul&gt</code></td>
+                    <td> <code>&lt/ul&gt</code> define an unordered/bullet list; <code>&ltol&gt</code> define an ordered/numbered list, followed by <code>&ltli&gt</code> define the list items</td>
+                    <td><ol><li>this</li><li>is</li><li>list</li></ol></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/whatis/whatis_html.asp"> <br> Tables</a></td>
+                    <td>
+    <code>&lttable&gt </code>;
+    <code>&lttr&gt</code>;
+    <code>&ltth&gt </code> ;                     
+    <code>&lttd&gt </code>
+                    </td>
+                    <td><xmp>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+    </table>
+</xmp>
+    </td>
+                <td><code>&lttable&gt</code> define a table. Its each rows are defined by <code>&lttr&gt</code>. Table headers are defined by <code>&ltth&gt</code>. Table cells (data) are defined by <code>&lttd&gt</code> </td>
+                <td><table>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                </table></td>
+                  </tr>
+                
+              </table>
+
+        <h3>HTML Structure</h3>
+        <p>HTML defines the web structure. The normal HTML structure are shown below.</p>
+        <div class="row">
+            <p class="col-sm-6">
+                All HTML documents must start with a document type declaration: <code>&lt!DOCTYPE html&gt</code>.
+
+                <br/>The HTML document itself begins with <code>&lthtml&gt</code> and ends with <code>&lt/html&gt</code>.
+                
+                <br/>The visible part of the HTML document is between <code>&ltbody&gt</code> and <code>&lt/body&gt</code>.
+                
+                <br/>The visible contents blocks can be defined using tags showing above   
+            </p>
+            <img class="col-sm-6 " src="html structure.png" style="width=200px;height:400px">
+
+        </div>
+        <!-- Examples of CSS -->
+        </div>
+        <div id='css' class="disappear">
+          <div class="container">
+            <h3 >CSS Examples</h3>
+            <p>Selectors are important in using CSS because that identify which element of HTML you want to style. Then, The CSS can be done by adding the style attributes such as (background-color; font-weight; color...)inside the style area. </p>
+            <ol>
+              <li class="list">Simple Selectors
+                <table class="table table-striped table-hover" >
+                  <tr>
+                    <th>Selectors</th>
+                    <th>code</th>
+                    <th>Descript</th>
+                    <th>Examples</th>
+                  </tr>
+                  <tr>
+                    <td>element selector</td>
+                    <td>
+                      p {
+                      text-align: center;
+                      color: red;
+                    }
+                  </td>
+                  <td>All the content inside the p <code>&lttag&gt</code>will be styled text center and color red</td>
+                  <td>
+                    <p>looking example</p>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>id Selector</td>
+                    <td># id {
+                      background_color: yellow;
+                    }</td>
+                    <td>All id element with the name of id will style by yellow background</td>
+                    <td id="id">looking example</td>
+                  </tr>
+                  <tr>
+                    <td>class Selector</td>
+                    
+                    <td>.center {
+                      color: green;
+                    }</td>
+                    <td>All element with class named center will style fornt color by green.</td>
+                    <td class="center">looking example</td>
+                  </tr> 
+                </table>
+              </li>
+              <li class="list">Combinator selector
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <th>Selectors</th>
+                    <th>Code</th>
+                    <th>Descript</th>
+                    <th>Example</th>
+
+                  </tr>
+                  <tr>
+                    <td>descendant selector </td>
+                    <td>div p {
+                      color: red;
+                    }</td>
+                    <td>All <code>p</code> tag of the descendant of <code>div</code> tag will be styled </td>
+                    <td><p class="first">looking example</p></td>
+                  </tr>
+                  <tr>
+                    <td>child selector</td>
+                    
+                    <td>div > p {
+                    background-color: yellow;
+                    }</td>
+                    <td>using <code>></code>, only the child tag of the father tag can be styled.</td>
+                    <td id="id">looking example</td>  
+                  </tr>
+                  <tr>
+                    <td>Adjacent Sibling Selector </td>
+                    
+                    <td>div + p {
+                      background-color: yellow;
+                    }</td>
+                    <td> The <code>p</code> element that is directly after <code>&ltdiv&gt</code> element will be styled.</td>
+                    <td id="id">looking example</td>
+                  </tr>
+                  <tr>
+                    <td>General Sibling Selector</td>
+                    
+                    <td>div ~ p {
+                      background-color: yellow;
+                    }</td>
+                    <td>selects all elements that are siblings of a specified element</td>
+                    <td id="id">looking example</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="list"> Pseudo-class selectors
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <th>Syntax</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                    <th>All CSS Pseudo Classes</th>
+                  </tr>
+                  <tr>
+                    <td>selector:pseudo-class {
+                      property: value;
+                    }</td>
+                    <td><b><a class="highlight" href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">This is a link</a></b></td>
+                    <td>The Pseudo-classes of link,visited,hover and active are used in this example to change color when the link haven't visited, after visted, hover over and be active </td>
+                    <td><button><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">link here</a></button></td>
+                  </tr>
+                </table>
+              </li>
+              <li class="list">Pseudo-elements selectors
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <th>Syntax</th>
+                    <th>Example</th>
+                    <th>Descript</th>
+                    <th>All CSS pseudo-element</th>
+                  </tr>
+                  <tr>
+                    <td>selector::pseudo-element {
+                      property: value;
+                    }</td>
+                    <td><p class="example" >style on the first letter</p></td>
+                    <td>the pseudo-element of first-letter was used in example to style the first letter of a paragraphy</td>
+                    <td><button><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">link here</a></button></td>
+                  </tr>
+                </table>
+              </li>
+              <li class="list">Attribute selectors
+                <table class="table table-striped table-hover ">
+                  <tr>
+                    <th>Code</th>
+                    <th>Example</th>
+                    <th>Descript</th>
+                    <th>All CSS Attribute Selectors</th>
+                  </tr>
+                  <tr>
+                    <td>[title~="flower"] {
+                      border: 5px solid yellow;
+                    }
+                    </td>
+                    <td><img src="flower.jpeg" title="flower" width="100px"></td>
+                    <td>the content of the title with letters of flower are styled. </td>
+                    <td><button><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">link here</a></button></td>
+                  </tr>
+                </table>
+              </li>
+            </ol>
+
+
+          </div>
+        </div>
+        <!--Examples of JS  -->
+
+        <div class='disappear' id='js'>   
+            <div class='container'>
+              <h3>JavaScript examples</h3>
+              <p> There are three implementations using JavaScript function in this web.</p>
+              <ol>
+                <li class="list">Content Switching：hiding and displaying
+                  <hr/>
+                  <div class="row">
+<xmp class="col-sm-6">
+    function css(){
+    document.getElementById("css").style.display = "block";
+    document.getElementById("html").style.display = "none";
+    document.getElementById("js").style.display = "none";
+    }
+                    </xmp>
+                    <p class="col-sm-6">
+                      The JavaScript defines a function called <i>css</i>. When people click on the css img, it will trigger function  <i>css</i>. The <i>css</i> function can dispaly the content with the id name of <i>'css'</i>. And disappear the content of the id name of <i>'html'</i> and <i>'js'</i>.
+                    </p>
+                  </div>
+                </li>
+                <li class="list">Dynamic navigation bar
+                  <hr/>
+                  <div class="row">
+<xmp class="col-sm-6">
+  window.onload = function() {
+    var myNavBar = document.getElementById('myNavBar')
+    window.addEventListener('scroll', function() {
+    var targetTop = window.pageYOffset
+    if (targetTop > 240){
+        myNavBar.classList.add('fixed-top')
+    }else{
+        myNavBar.classList.remove('fixed-top')
+    }
+    })
+  }
+</xmp>            
+                    <p class="col-sm-6">
+                      This function is a global function. we define the content of navigation bar as variable of <i>myNavBar</i>. We define a variable called <i>targetTop</i> that is the scoll distance of current web page. If the distance greater than <i>240</i>, We let the <i>myNavBar</i> move to the top area of current web location, otherwise the <i>myNavBar</i> keep in current location.  
+                    </p>
+                  </div>
+                </li>
+
+                <li class="list">Data capture from 3rd sites
+                  <hr/>
+                  <div class='row'>
+                    <xmp class="col-sm-6">
+var request = new XMLHttpRequest()
+request.open('GET',
+    'https://coronavirus-tracker-api.herokuapp.com/v2/locations')
+request.onload=function(){
+var data_str=this.response
+var data = JSON.parse(data_str)
+var coronavirus_latest = data.latest
+var coronavirus_locations = data.locations
+request.send()
+                                      </xmp>
+                                      <p class="col-sm-6">
+                                        We send our requests to get the data to the link that involve the expected dataset. 
+                                        After getting data, we load the data by defined function. firstly, we need to transfer string data to Json type.
+                                        Then, we grab usful data of <i>latest</i> and <i>locations</i> into two variables. After taht, we nned to write data into our table. 
+                                      </p>
+
+                  </div>
+                </li>
+              </ol>
+              <br>
+              <br>
+<!--  COVID19 resources from 3rd party sites  -->
+                <h4 style="text-align: center;">COVID19 tracker</h4>
+                <h5 class="list">World coronavirus information</h>
+                <table class="table table-striped table-hover" style="font-size: small;">
+
+                 <thead>
+                  <th>confirmed</th>
+                  <th>deaths</th>
+                  <th>recovered</th>
+                 </thead>
+                  <tbody id='world'>
+
+                  </tbody>
+
+                </table>
+
+                <br>
+
+                <h5 class="list">Country coronavirus information</h>
+                <table class='table table-striped table-hover' style="font-size: small;">
+                    
+                    <thead>
+                        <th>Country</th>
+                        <th>Population</th>
+                        <th>Province</th>
+                        <th>Update Date</th>
+                        <th>Confirmed</th>
+                        <th>Deaths</th>
+                        <th>Recovered</th>
+                    </thead>
+
+                    <tbody id='convid'>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+  </body>
+</html>
